@@ -21,11 +21,11 @@ find / -type f -executable -perm -4000 -ls 2>/dev/null | sort -k 5
 echo ""
 
 echo "Top tweleve biggest files are"
-find / -type f -exec ls -l -- block-size=MB {} + 2>/dev/null | sort -k5 -hr | head -n 12 | awk '{print $3, $5, $9}'
+find / -type f -exec ls -l --block-size=MB {} + 2>/dev/null | sort -k5 -hr | head -n 12 | awk '{print $3, $5, $9}'
 echo ""
 echo ""
 echo "sizes and error in the files"
-find / -type f -executable -perm -2000 -ls 2>/dull/null | sort -k 5
+find / -type f -executable -perm -2000 -ls 2>/dev/null | sort -k 5
 exit
 
 # for the task, add
